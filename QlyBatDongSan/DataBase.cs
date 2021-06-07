@@ -11,7 +11,7 @@ namespace QlyBatDongSan
 {
     class DataBase
     {
-        string ConnStr = @"Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=QuanLyBatDongSan;Integrated Security=True";
+        string ConnStr = @"Data Source=DESKTOP-IF66S7O\SQLEXPRESS;Initial Catalog=QuanLyBatDongSan;Integrated Security=True";
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

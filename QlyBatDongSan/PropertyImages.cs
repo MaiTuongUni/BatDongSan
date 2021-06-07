@@ -17,7 +17,7 @@ namespace QlyBatDongSan
         DataBase dataBase;
         DataTable dataProperty;
         DataTable dataPropertyImage;
-
+        String location;
         int propertyId = -1;
         public PropertyImages()
         {
@@ -89,7 +89,7 @@ namespace QlyBatDongSan
 
         private void btnBrowsePropertyImages_Click(object sender, EventArgs e)
         {
-            String location = "";
+            location = "";
             try
             {
                 OpenFileDialog dialog = new OpenFileDialog();
@@ -121,10 +121,16 @@ namespace QlyBatDongSan
                     MessageBox.Show("Please choose property to add");
                     return;
                 }
-                MemoryStream stream = new MemoryStream();
-                pcPropertyImages.Image.Save(stream, ImageFormat.Jpeg);
-                dataBase.MyExecuteNonQuery("insert into property_image(propertyId,image) values('" + propertyId + "','" + stream.ToArray() + "')", CommandType.Text);
-                MessageBox.Show("Add successed");
+                Image image = Image.FromFile(location);
+                using (MemoryStream m = new MemoryStream())
+                {
+                    image.Save(m, image.RawFormat);
+                    byte[] imageBytes = m.ToArray();
+                    string base64String = Convert.ToBase64String(imageBytes);
+                    dataBase.MyExecuteNonQuery("insert into property_image(propertyId,image) values('"+propertyId+"','" + base64String + "')", CommandType.Text);
+                    MessageBox.Show("Add successed");
+                }
+                
                 LoadTypeDetail();
             }
             catch
@@ -164,16 +170,24 @@ namespace QlyBatDongSan
                 {
                     if (row["id"].ToString().Equals(lvMiddlePropertyImages.SelectedItems[0].Text))
                     { 
-                        byte[] stringArray = (byte[])row["image"];
-                        MessageBox.Show(stringArray.ToString());
-                        if (stringArray == null)
-                        {
-                            MessageBox.Show("null");
-                        }
-                        MemoryStream stream = new MemoryStream(stringArray);
+                        //byte[] stringArray = (byte[])row["image"];
+                        //MessageBox.Show(stringArray.ToString());
+                        //if (stringArray == null)
+                        //{
+                        //    MessageBox.Show("null");
+                        //}
+                        string base64 = row["image"].ToString();
+                        //MemoryStream stream = new MemoryStream(stringArray);
 
-                        Image image = Image.FromStream(stream);
-                        pcPropertyImages.Image = image;
+                        //Image image = Image.FromStream(stream);
+                        //pcPropertyImages.Image = image;
+                        byte[] imageBytes = Convert.FromBase64String(base64);
+                        // Convert byte[] to Image
+                        using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+                        {
+                            Image image = Image.FromStream(ms, true);
+                            pcPropertyImages.Image = image;
+                        }
                     }
                 }
             }
