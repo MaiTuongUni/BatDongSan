@@ -192,6 +192,12 @@ namespace QlyBatDongSan
                 }
             }
         }
+
+        private void btnRemovePropertyImages_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 
 }
