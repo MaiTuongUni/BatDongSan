@@ -192,6 +192,7 @@ namespace QlyBatDongSan
             this.txtPrice.Size = new System.Drawing.Size(221, 20);
             this.txtPrice.TabIndex = 26;
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // txtOwnerId
             // 

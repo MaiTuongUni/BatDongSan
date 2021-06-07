@@ -47,24 +47,24 @@ namespace QlyBatDongSan
             this.dtpkSellDateSale = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.lvSalesList = new System.Windows.Forms.ListView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lvClientListSale = new System.Windows.Forms.ListView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lvPropertiesListSale = new System.Windows.Forms.ListView();
-            this.btnAddSale = new System.Windows.Forms.Button();
-            this.btnEditSale = new System.Windows.Forms.Button();
-            this.btnRemoveSale = new System.Windows.Forms.Button();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.property = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.client = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label7 = new System.Windows.Forms.Label();
+            this.lvClientListSale = new System.Windows.Forms.ListView();
             this.idClient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.firstnameClient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label8 = new System.Windows.Forms.Label();
+            this.lvPropertiesListSale = new System.Windows.Forms.ListView();
             this.idPro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ownerId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pricePro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnAddSale = new System.Windows.Forms.Button();
+            this.btnEditSale = new System.Windows.Forms.Button();
+            this.btnRemoveSale = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +75,7 @@ namespace QlyBatDongSan
             this.panel1.Controls.Add(this.label11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(983, 63);
             this.panel1.TabIndex = 0;
@@ -98,7 +98,7 @@ namespace QlyBatDongSan
             this.panel2.Controls.Add(this.btnRefreshSale);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 441);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(983, 81);
             this.panel2.TabIndex = 1;
@@ -106,7 +106,7 @@ namespace QlyBatDongSan
             // btnAddNewPropertySale
             // 
             this.btnAddNewPropertySale.Location = new System.Drawing.Point(750, 18);
-            this.btnAddNewPropertySale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddNewPropertySale.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddNewPropertySale.Name = "btnAddNewPropertySale";
             this.btnAddNewPropertySale.Size = new System.Drawing.Size(210, 44);
             this.btnAddNewPropertySale.TabIndex = 1;
@@ -117,7 +117,7 @@ namespace QlyBatDongSan
             // btnAddNewClientSale
             // 
             this.btnAddNewClientSale.Location = new System.Drawing.Point(474, 18);
-            this.btnAddNewClientSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddNewClientSale.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddNewClientSale.Name = "btnAddNewClientSale";
             this.btnAddNewClientSale.Size = new System.Drawing.Size(226, 44);
             this.btnAddNewClientSale.TabIndex = 1;
@@ -128,7 +128,7 @@ namespace QlyBatDongSan
             // btnRefreshSale
             // 
             this.btnRefreshSale.Location = new System.Drawing.Point(11, 18);
-            this.btnRefreshSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRefreshSale.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefreshSale.Name = "btnRefreshSale";
             this.btnRefreshSale.Size = new System.Drawing.Size(424, 44);
             this.btnRefreshSale.TabIndex = 0;
@@ -189,7 +189,7 @@ namespace QlyBatDongSan
             // txtIDSale
             // 
             this.txtIDSale.Location = new System.Drawing.Point(79, 71);
-            this.txtIDSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIDSale.Margin = new System.Windows.Forms.Padding(2);
             this.txtIDSale.Name = "txtIDSale";
             this.txtIDSale.ReadOnly = true;
             this.txtIDSale.Size = new System.Drawing.Size(90, 20);
@@ -198,34 +198,37 @@ namespace QlyBatDongSan
             // txtPropertyIdSale
             // 
             this.txtPropertyIdSale.Location = new System.Drawing.Point(79, 118);
-            this.txtPropertyIdSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPropertyIdSale.Margin = new System.Windows.Forms.Padding(2);
             this.txtPropertyIdSale.Name = "txtPropertyIdSale";
             this.txtPropertyIdSale.Size = new System.Drawing.Size(90, 20);
             this.txtPropertyIdSale.TabIndex = 3;
+            this.txtPropertyIdSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPropertyIdSale_KeyPress);
             // 
             // txtClientIdSale
             // 
             this.txtClientIdSale.Location = new System.Drawing.Point(79, 161);
-            this.txtClientIdSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtClientIdSale.Margin = new System.Windows.Forms.Padding(2);
             this.txtClientIdSale.Name = "txtClientIdSale";
             this.txtClientIdSale.Size = new System.Drawing.Size(90, 20);
             this.txtClientIdSale.TabIndex = 3;
+            this.txtClientIdSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClientIdSale_KeyPress);
             // 
             // txtFinalPriceSale
             // 
             this.txtFinalPriceSale.Location = new System.Drawing.Point(79, 204);
-            this.txtFinalPriceSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFinalPriceSale.Margin = new System.Windows.Forms.Padding(2);
             this.txtFinalPriceSale.Name = "txtFinalPriceSale";
             this.txtFinalPriceSale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtFinalPriceSale.Size = new System.Drawing.Size(90, 20);
             this.txtFinalPriceSale.TabIndex = 3;
             this.txtFinalPriceSale.TextChanged += new System.EventHandler(this.txtFinalPriceSale_TextChanged);
+            this.txtFinalPriceSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFinalPriceSale_KeyPress);
             // 
             // dtpkSellDateSale
             // 
             this.dtpkSellDateSale.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkSellDateSale.Location = new System.Drawing.Point(76, 249);
-            this.dtpkSellDateSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpkSellDateSale.Margin = new System.Windows.Forms.Padding(2);
             this.dtpkSellDateSale.Name = "dtpkSellDateSale";
             this.dtpkSellDateSale.Size = new System.Drawing.Size(92, 20);
             this.dtpkSellDateSale.TabIndex = 4;
@@ -252,7 +255,7 @@ namespace QlyBatDongSan
             this.lvSalesList.FullRowSelect = true;
             this.lvSalesList.HideSelection = false;
             this.lvSalesList.Location = new System.Drawing.Point(185, 86);
-            this.lvSalesList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvSalesList.Margin = new System.Windows.Forms.Padding(2);
             this.lvSalesList.MultiSelect = false;
             this.lvSalesList.Name = "lvSalesList";
             this.lvSalesList.Size = new System.Drawing.Size(250, 331);
@@ -260,97 +263,6 @@ namespace QlyBatDongSan
             this.lvSalesList.UseCompatibleStateImageBehavior = false;
             this.lvSalesList.View = System.Windows.Forms.View.Details;
             this.lvSalesList.Click += new System.EventHandler(this.lvSalesList_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(542, 71);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Clients Clist:";
-            // 
-            // lvClientListSale
-            // 
-            this.lvClientListSale.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.idClient,
-            this.firstnameClient,
-            this.lastname});
-            this.lvClientListSale.FullRowSelect = true;
-            this.lvClientListSale.HideSelection = false;
-            this.lvClientListSale.Location = new System.Drawing.Point(456, 87);
-            this.lvClientListSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lvClientListSale.MultiSelect = false;
-            this.lvClientListSale.Name = "lvClientListSale";
-            this.lvClientListSale.Size = new System.Drawing.Size(244, 331);
-            this.lvClientListSale.TabIndex = 6;
-            this.lvClientListSale.UseCompatibleStateImageBehavior = false;
-            this.lvClientListSale.View = System.Windows.Forms.View.Details;
-            this.lvClientListSale.Click += new System.EventHandler(this.lvClientListSale_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(793, 71);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 13);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Properties List:";
-            // 
-            // lvPropertiesListSale
-            // 
-            this.lvPropertiesListSale.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.idPro,
-            this.ownerId,
-            this.pricePro});
-            this.lvPropertiesListSale.FullRowSelect = true;
-            this.lvPropertiesListSale.HideSelection = false;
-            this.lvPropertiesListSale.Location = new System.Drawing.Point(722, 86);
-            this.lvPropertiesListSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lvPropertiesListSale.MultiSelect = false;
-            this.lvPropertiesListSale.Name = "lvPropertiesListSale";
-            this.lvPropertiesListSale.Size = new System.Drawing.Size(238, 331);
-            this.lvPropertiesListSale.TabIndex = 6;
-            this.lvPropertiesListSale.UseCompatibleStateImageBehavior = false;
-            this.lvPropertiesListSale.View = System.Windows.Forms.View.Details;
-            this.lvPropertiesListSale.Click += new System.EventHandler(this.lvPropertiesListSale_Click);
-            // 
-            // btnAddSale
-            // 
-            this.btnAddSale.Location = new System.Drawing.Point(11, 283);
-            this.btnAddSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAddSale.Name = "btnAddSale";
-            this.btnAddSale.Size = new System.Drawing.Size(157, 37);
-            this.btnAddSale.TabIndex = 7;
-            this.btnAddSale.Text = "Add";
-            this.btnAddSale.UseVisualStyleBackColor = true;
-            this.btnAddSale.Click += new System.EventHandler(this.btnAddSale_Click);
-            // 
-            // btnEditSale
-            // 
-            this.btnEditSale.Location = new System.Drawing.Point(11, 330);
-            this.btnEditSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnEditSale.Name = "btnEditSale";
-            this.btnEditSale.Size = new System.Drawing.Size(157, 37);
-            this.btnEditSale.TabIndex = 7;
-            this.btnEditSale.Text = "Edit";
-            this.btnEditSale.UseVisualStyleBackColor = true;
-            this.btnEditSale.Click += new System.EventHandler(this.btnEditSale_Click);
-            // 
-            // btnRemoveSale
-            // 
-            this.btnRemoveSale.Location = new System.Drawing.Point(11, 381);
-            this.btnRemoveSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnRemoveSale.Name = "btnRemoveSale";
-            this.btnRemoveSale.Size = new System.Drawing.Size(157, 37);
-            this.btnRemoveSale.TabIndex = 7;
-            this.btnRemoveSale.Text = "Remove";
-            this.btnRemoveSale.UseVisualStyleBackColor = true;
-            this.btnRemoveSale.Click += new System.EventHandler(this.btnRemoveSale_Click);
             // 
             // id
             // 
@@ -376,6 +288,35 @@ namespace QlyBatDongSan
             // 
             this.date.Text = "Date";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(542, 71);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Clients Clist:";
+            // 
+            // lvClientListSale
+            // 
+            this.lvClientListSale.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.idClient,
+            this.firstnameClient,
+            this.lastname});
+            this.lvClientListSale.FullRowSelect = true;
+            this.lvClientListSale.HideSelection = false;
+            this.lvClientListSale.Location = new System.Drawing.Point(456, 87);
+            this.lvClientListSale.Margin = new System.Windows.Forms.Padding(2);
+            this.lvClientListSale.MultiSelect = false;
+            this.lvClientListSale.Name = "lvClientListSale";
+            this.lvClientListSale.Size = new System.Drawing.Size(244, 331);
+            this.lvClientListSale.TabIndex = 6;
+            this.lvClientListSale.UseCompatibleStateImageBehavior = false;
+            this.lvClientListSale.View = System.Windows.Forms.View.Details;
+            this.lvClientListSale.Click += new System.EventHandler(this.lvClientListSale_Click);
+            // 
             // idClient
             // 
             this.idClient.Text = "ID";
@@ -391,6 +332,35 @@ namespace QlyBatDongSan
             this.lastname.Text = "LastName";
             this.lastname.Width = 100;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(793, 71);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(92, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Properties List:";
+            // 
+            // lvPropertiesListSale
+            // 
+            this.lvPropertiesListSale.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.idPro,
+            this.ownerId,
+            this.pricePro});
+            this.lvPropertiesListSale.FullRowSelect = true;
+            this.lvPropertiesListSale.HideSelection = false;
+            this.lvPropertiesListSale.Location = new System.Drawing.Point(722, 86);
+            this.lvPropertiesListSale.Margin = new System.Windows.Forms.Padding(2);
+            this.lvPropertiesListSale.MultiSelect = false;
+            this.lvPropertiesListSale.Name = "lvPropertiesListSale";
+            this.lvPropertiesListSale.Size = new System.Drawing.Size(238, 331);
+            this.lvPropertiesListSale.TabIndex = 6;
+            this.lvPropertiesListSale.UseCompatibleStateImageBehavior = false;
+            this.lvPropertiesListSale.View = System.Windows.Forms.View.Details;
+            this.lvPropertiesListSale.Click += new System.EventHandler(this.lvPropertiesListSale_Click);
+            // 
             // idPro
             // 
             this.idPro.Text = "ID";
@@ -403,6 +373,39 @@ namespace QlyBatDongSan
             // 
             this.pricePro.Text = "Price";
             this.pricePro.Width = 140;
+            // 
+            // btnAddSale
+            // 
+            this.btnAddSale.Location = new System.Drawing.Point(11, 283);
+            this.btnAddSale.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddSale.Name = "btnAddSale";
+            this.btnAddSale.Size = new System.Drawing.Size(157, 37);
+            this.btnAddSale.TabIndex = 7;
+            this.btnAddSale.Text = "Add";
+            this.btnAddSale.UseVisualStyleBackColor = true;
+            this.btnAddSale.Click += new System.EventHandler(this.btnAddSale_Click);
+            // 
+            // btnEditSale
+            // 
+            this.btnEditSale.Location = new System.Drawing.Point(11, 330);
+            this.btnEditSale.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditSale.Name = "btnEditSale";
+            this.btnEditSale.Size = new System.Drawing.Size(157, 37);
+            this.btnEditSale.TabIndex = 7;
+            this.btnEditSale.Text = "Edit";
+            this.btnEditSale.UseVisualStyleBackColor = true;
+            this.btnEditSale.Click += new System.EventHandler(this.btnEditSale_Click);
+            // 
+            // btnRemoveSale
+            // 
+            this.btnRemoveSale.Location = new System.Drawing.Point(11, 381);
+            this.btnRemoveSale.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRemoveSale.Name = "btnRemoveSale";
+            this.btnRemoveSale.Size = new System.Drawing.Size(157, 37);
+            this.btnRemoveSale.TabIndex = 7;
+            this.btnRemoveSale.Text = "Remove";
+            this.btnRemoveSale.UseVisualStyleBackColor = true;
+            this.btnRemoveSale.Click += new System.EventHandler(this.btnRemoveSale_Click);
             // 
             // Sale
             // 
@@ -431,7 +434,7 @@ namespace QlyBatDongSan
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Sale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sale";
