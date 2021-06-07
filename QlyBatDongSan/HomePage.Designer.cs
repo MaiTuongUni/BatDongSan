@@ -64,7 +64,7 @@ namespace QlyBatDongSan
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 106);
             this.panel1.TabIndex = 0;
@@ -85,7 +85,7 @@ namespace QlyBatDongSan
             // 
             this.panel14.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel14.Location = new System.Drawing.Point(113, 74);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(328, 4);
             this.panel14.TabIndex = 1;
@@ -95,7 +95,7 @@ namespace QlyBatDongSan
             this.panel13.BackColor = System.Drawing.Color.MintCream;
             this.panel13.Controls.Add(this.label7);
             this.panel13.Location = new System.Drawing.Point(10, 8);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(85, 92);
             this.panel13.TabIndex = 0;
@@ -118,7 +118,7 @@ namespace QlyBatDongSan
             this.panel3.Controls.Add(this.btnPropertyType);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 187);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(463, 81);
             this.panel3.TabIndex = 2;
@@ -130,12 +130,13 @@ namespace QlyBatDongSan
             this.btnPropertyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyType.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPropertyType.Location = new System.Drawing.Point(0, 0);
-            this.btnPropertyType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPropertyType.Margin = new System.Windows.Forms.Padding(2);
             this.btnPropertyType.Name = "btnPropertyType";
             this.btnPropertyType.Size = new System.Drawing.Size(463, 81);
             this.btnPropertyType.TabIndex = 0;
             this.btnPropertyType.Text = "Property - Type";
             this.btnPropertyType.UseVisualStyleBackColor = false;
+            this.btnPropertyType.Click += new System.EventHandler(this.btnPropertyType_Click);
             // 
             // panel5
             // 
@@ -143,7 +144,7 @@ namespace QlyBatDongSan
             this.panel5.Controls.Add(this.btnOwner);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 349);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(463, 81);
             this.panel5.TabIndex = 4;
@@ -155,12 +156,13 @@ namespace QlyBatDongSan
             this.btnOwner.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOwner.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOwner.Location = new System.Drawing.Point(0, 0);
-            this.btnOwner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOwner.Margin = new System.Windows.Forms.Padding(2);
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(463, 81);
             this.btnOwner.TabIndex = 0;
             this.btnOwner.Text = "Owner";
             this.btnOwner.UseVisualStyleBackColor = false;
+            this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
             // panel6
             // 
@@ -168,7 +170,7 @@ namespace QlyBatDongSan
             this.panel6.Controls.Add(this.btnClient);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 430);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(463, 81);
             this.panel6.TabIndex = 5;
@@ -180,12 +182,13 @@ namespace QlyBatDongSan
             this.btnClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClient.Location = new System.Drawing.Point(0, 0);
-            this.btnClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClient.Margin = new System.Windows.Forms.Padding(2);
             this.btnClient.Name = "btnClient";
             this.btnClient.Size = new System.Drawing.Size(463, 81);
             this.btnClient.TabIndex = 0;
             this.btnClient.Text = "Client";
             this.btnClient.UseVisualStyleBackColor = false;
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // panel7
             // 
@@ -193,7 +196,7 @@ namespace QlyBatDongSan
             this.panel7.Controls.Add(this.btnSale);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 511);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(463, 81);
             this.panel7.TabIndex = 6;
@@ -205,12 +208,13 @@ namespace QlyBatDongSan
             this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSale.Location = new System.Drawing.Point(0, 0);
-            this.btnSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSale.Margin = new System.Windows.Forms.Padding(2);
             this.btnSale.Name = "btnSale";
             this.btnSale.Size = new System.Drawing.Size(463, 81);
             this.btnSale.TabIndex = 0;
             this.btnSale.Text = "Sale";
             this.btnSale.UseVisualStyleBackColor = false;
+            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
             // panel2
             // 
@@ -218,7 +222,7 @@ namespace QlyBatDongSan
             this.panel2.Controls.Add(this.btnProperty);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 106);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(463, 81);
             this.panel2.TabIndex = 1;
@@ -230,7 +234,7 @@ namespace QlyBatDongSan
             this.btnProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProperty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProperty.Location = new System.Drawing.Point(0, 0);
-            this.btnProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProperty.Margin = new System.Windows.Forms.Padding(2);
             this.btnProperty.Name = "btnProperty";
             this.btnProperty.Size = new System.Drawing.Size(463, 81);
             this.btnProperty.TabIndex = 0;
@@ -244,7 +248,7 @@ namespace QlyBatDongSan
             this.panel4.Controls.Add(this.btnPropertyImage);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 268);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(463, 81);
             this.panel4.TabIndex = 3;
@@ -256,12 +260,13 @@ namespace QlyBatDongSan
             this.btnPropertyImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPropertyImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPropertyImage.Location = new System.Drawing.Point(0, 0);
-            this.btnPropertyImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPropertyImage.Margin = new System.Windows.Forms.Padding(2);
             this.btnPropertyImage.Name = "btnPropertyImage";
             this.btnPropertyImage.Size = new System.Drawing.Size(463, 81);
             this.btnPropertyImage.TabIndex = 0;
             this.btnPropertyImage.Text = "Property - Images";
             this.btnPropertyImage.UseVisualStyleBackColor = false;
+            this.btnPropertyImage.Click += new System.EventHandler(this.btnPropertyImage_Click);
             // 
             // HomePage
             // 
@@ -275,7 +280,7 @@ namespace QlyBatDongSan
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

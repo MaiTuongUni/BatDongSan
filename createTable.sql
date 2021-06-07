@@ -85,7 +85,7 @@ GO
 CREATE TABLE [dbo].[property_image](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[propertyId] [int] NOT NULL,
-	[image] [text] NOT NULL,
+	[image] [image] NOT NULL,
  CONSTRAINT [PK_property_image] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC

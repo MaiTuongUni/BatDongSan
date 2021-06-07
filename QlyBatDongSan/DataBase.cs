@@ -48,7 +48,7 @@ namespace QlyBatDongSan
                 comm.ExecuteNonQuery();
                 f = true;
             }
-            catch (SqlException ex)
+            catch (SqlException)
             {
                 
             }
@@ -75,7 +75,7 @@ namespace QlyBatDongSan
                     f = true;
                 }
             }
-            catch (System.NullReferenceException ex)
+            catch (System.NullReferenceException)
             {
                 return false;
             }
