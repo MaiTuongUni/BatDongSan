@@ -11,3 +11,8 @@ D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.Form1.resources
 D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.LogIn.resources
 D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.HomePage.resources
 D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.Property.resources
+D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.Clients.resources
+D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.Owners.resources
+D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.PropertyImages.resources
+D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.PropertyType.resources
+D:\Java\C#\QLyBatDongSan\QlyBatDongSan\obj\Debug\QlyBatDongSan.Sale.resources
