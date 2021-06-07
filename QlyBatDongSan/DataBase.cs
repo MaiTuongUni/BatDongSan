@@ -35,7 +35,7 @@ namespace QlyBatDongSan
             return ds;
         }
 
-        public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error)
+        public bool MyExecuteNonQuery(string strSQL, CommandType ct)
         {
             bool f = false;
             if (conn.State == ConnectionState.Open)
@@ -50,7 +50,7 @@ namespace QlyBatDongSan
             }
             catch (SqlException ex)
             {
-                error = ex.Message;
+                
             }
             finally
             {

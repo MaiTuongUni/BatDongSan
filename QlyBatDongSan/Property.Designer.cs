@@ -78,7 +78,7 @@ namespace QlyBatDongSan
             this.panel1.Controls.Add(this.label11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(712, 63);
             this.panel1.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace QlyBatDongSan
             this.panel2.Controls.Add(this.btnAddProperty);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 433);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(712, 89);
             this.panel2.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace QlyBatDongSan
             // btnShowProperty
             // 
             this.btnShowProperty.Location = new System.Drawing.Point(554, 21);
-            this.btnShowProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowProperty.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowProperty.Name = "btnShowProperty";
             this.btnShowProperty.Size = new System.Drawing.Size(91, 47);
             this.btnShowProperty.TabIndex = 0;
@@ -121,32 +121,35 @@ namespace QlyBatDongSan
             // btnRemoveProperty
             // 
             this.btnRemoveProperty.Location = new System.Drawing.Point(381, 21);
-            this.btnRemoveProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveProperty.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProperty.Name = "btnRemoveProperty";
             this.btnRemoveProperty.Size = new System.Drawing.Size(91, 47);
             this.btnRemoveProperty.TabIndex = 0;
             this.btnRemoveProperty.Text = "Remove";
             this.btnRemoveProperty.UseVisualStyleBackColor = true;
+            this.btnRemoveProperty.Click += new System.EventHandler(this.btnRemoveProperty_Click);
             // 
             // btnEditProperty
             // 
             this.btnEditProperty.Location = new System.Drawing.Point(223, 21);
-            this.btnEditProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditProperty.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditProperty.Name = "btnEditProperty";
             this.btnEditProperty.Size = new System.Drawing.Size(91, 47);
             this.btnEditProperty.TabIndex = 0;
             this.btnEditProperty.Text = "Edit";
             this.btnEditProperty.UseVisualStyleBackColor = true;
+            this.btnEditProperty.Click += new System.EventHandler(this.btnEditProperty_Click);
             // 
             // btnAddProperty
             // 
             this.btnAddProperty.Location = new System.Drawing.Point(66, 21);
-            this.btnAddProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddProperty.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddProperty.Name = "btnAddProperty";
             this.btnAddProperty.Size = new System.Drawing.Size(91, 47);
             this.btnAddProperty.TabIndex = 0;
             this.btnAddProperty.Text = "Add";
             this.btnAddProperty.UseVisualStyleBackColor = true;
+            this.btnAddProperty.Click += new System.EventHandler(this.btnAddProperty_Click);
             // 
             // panel3
             // 
@@ -166,7 +169,7 @@ namespace QlyBatDongSan
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 63);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(364, 370);
             this.panel3.TabIndex = 2;
@@ -174,7 +177,7 @@ namespace QlyBatDongSan
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(91, 237);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(221, 95);
@@ -183,7 +186,7 @@ namespace QlyBatDongSan
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(91, 197);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPrice.Size = new System.Drawing.Size(221, 20);
@@ -193,7 +196,7 @@ namespace QlyBatDongSan
             // txtOwnerId
             // 
             this.txtOwnerId.Location = new System.Drawing.Point(91, 154);
-            this.txtOwnerId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOwnerId.Margin = new System.Windows.Forms.Padding(2);
             this.txtOwnerId.Name = "txtOwnerId";
             this.txtOwnerId.Size = new System.Drawing.Size(221, 20);
             this.txtOwnerId.TabIndex = 27;
@@ -201,7 +204,7 @@ namespace QlyBatDongSan
             // txtQuareFeet
             // 
             this.txtQuareFeet.Location = new System.Drawing.Point(91, 109);
-            this.txtQuareFeet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQuareFeet.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuareFeet.Name = "txtQuareFeet";
             this.txtQuareFeet.Size = new System.Drawing.Size(221, 20);
             this.txtQuareFeet.TabIndex = 25;
@@ -210,7 +213,7 @@ namespace QlyBatDongSan
             // 
             this.btnSearch.BackColor = System.Drawing.Color.OldLace;
             this.btnSearch.Location = new System.Drawing.Point(255, 13);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(76, 26);
             this.btnSearch.TabIndex = 24;
@@ -222,7 +225,7 @@ namespace QlyBatDongSan
             // 
             this.cbbType.FormattingEnabled = true;
             this.cbbType.Location = new System.Drawing.Point(91, 61);
-            this.cbbType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbType.Margin = new System.Windows.Forms.Padding(2);
             this.cbbType.Name = "cbbType";
             this.cbbType.Size = new System.Drawing.Size(221, 21);
             this.cbbType.TabIndex = 23;
@@ -230,7 +233,7 @@ namespace QlyBatDongSan
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(91, 17);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(144, 20);
             this.txtId.TabIndex = 22;
@@ -312,7 +315,7 @@ namespace QlyBatDongSan
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(368, 63);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(344, 370);
             this.panel4.TabIndex = 3;
@@ -320,7 +323,7 @@ namespace QlyBatDongSan
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(16, 176);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(301, 156);
@@ -350,7 +353,7 @@ namespace QlyBatDongSan
             // 
             this.cbGarage.AutoSize = true;
             this.cbGarage.Location = new System.Drawing.Point(249, 138);
-            this.cbGarage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbGarage.Margin = new System.Windows.Forms.Padding(2);
             this.cbGarage.Name = "cbGarage";
             this.cbGarage.Size = new System.Drawing.Size(61, 17);
             this.cbGarage.TabIndex = 2;
@@ -361,7 +364,7 @@ namespace QlyBatDongSan
             // 
             this.cbBackyard.AutoSize = true;
             this.cbBackyard.Location = new System.Drawing.Point(249, 96);
-            this.cbBackyard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBackyard.Margin = new System.Windows.Forms.Padding(2);
             this.cbBackyard.Name = "cbBackyard";
             this.cbBackyard.Size = new System.Drawing.Size(71, 17);
             this.cbBackyard.TabIndex = 2;
@@ -372,7 +375,7 @@ namespace QlyBatDongSan
             // 
             this.cbPool.AutoSize = true;
             this.cbPool.Location = new System.Drawing.Point(249, 58);
-            this.cbPool.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbPool.Margin = new System.Windows.Forms.Padding(2);
             this.cbPool.Name = "cbPool";
             this.cbPool.Size = new System.Drawing.Size(47, 17);
             this.cbPool.TabIndex = 2;
@@ -383,7 +386,7 @@ namespace QlyBatDongSan
             // 
             this.cbBalcony.AutoSize = true;
             this.cbBalcony.Location = new System.Drawing.Point(249, 16);
-            this.cbBalcony.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBalcony.Margin = new System.Windows.Forms.Padding(2);
             this.cbBalcony.Name = "cbBalcony";
             this.cbBalcony.Size = new System.Drawing.Size(64, 17);
             this.cbBalcony.TabIndex = 2;
@@ -393,7 +396,7 @@ namespace QlyBatDongSan
             // numAge
             // 
             this.numAge.Location = new System.Drawing.Point(122, 94);
-            this.numAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numAge.Margin = new System.Windows.Forms.Padding(2);
             this.numAge.Name = "numAge";
             this.numAge.Size = new System.Drawing.Size(104, 20);
             this.numAge.TabIndex = 1;
@@ -401,7 +404,7 @@ namespace QlyBatDongSan
             // numBathroom
             // 
             this.numBathroom.Location = new System.Drawing.Point(122, 57);
-            this.numBathroom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numBathroom.Margin = new System.Windows.Forms.Padding(2);
             this.numBathroom.Name = "numBathroom";
             this.numBathroom.Size = new System.Drawing.Size(104, 20);
             this.numBathroom.TabIndex = 1;
@@ -409,7 +412,7 @@ namespace QlyBatDongSan
             // numBedroom
             // 
             this.numBedroom.Location = new System.Drawing.Point(122, 15);
-            this.numBedroom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numBedroom.Margin = new System.Windows.Forms.Padding(2);
             this.numBedroom.Name = "numBedroom";
             this.numBedroom.Size = new System.Drawing.Size(104, 20);
             this.numBedroom.TabIndex = 1;
@@ -443,7 +446,7 @@ namespace QlyBatDongSan
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Property";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Property";
