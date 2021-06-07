@@ -25,12 +25,12 @@ insert into owner(firstname,lastname,phone,email,address) values
 (N'Chủ 5',N'Nhà','8080678546','email@gmail.com','Thanh Hóa');
 go
 
-insert into property(type,squarefeet,ownerId,price,address,bedroom,age,balcony,pool,backyard,garage,description) values
-(1,100,1,'2.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,2,1,N'Nhà đẹp'),
-(2,200,2,'20.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,2,1,N'Nhà đẹp'),
-(3,200,3,'3.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,2,1,N'Nhà đẹp'),
-(4,100,4,'4.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,2,1,N'Nhà đẹp'),
-(5,50,5,'500.000',N'86 Nguyễn Tài Lộc',3,1,1,1,2,1,N'Nhà đẹp');
+insert into property(type,squarefeet,ownerId,price,address,bedroom,bathroom,age,balcony,pool,backyard,garage,description) values
+(1,100,1,'2.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,1,2,1,N'Nhà đẹp'),
+(2,200,2,'20.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,1,2,1,N'Nhà đẹp'),
+(3,200,3,'3.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,1,2,1,N'Nhà đẹp'),
+(4,100,4,'4.000.000',N'86 Nguyễn Tài Lộc',3,1,1,1,1,2,1,N'Nhà đẹp'),
+(5,50,5,'500.000',N'86 Nguyễn Tài Lộc',3,1,1,1,1,2,1,N'Nhà đẹp');
 go
 
 insert into sale(propertyId,clientId,finalprice) values

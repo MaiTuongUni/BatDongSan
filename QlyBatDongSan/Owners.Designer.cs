@@ -35,7 +35,6 @@ namespace QlyBatDongSan
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnRemoveOwners = new System.Windows.Forms.Button();
             this.btnEditOwners = new System.Windows.Forms.Button();
-            this.btnOwnerProperty = new System.Windows.Forms.Button();
             this.btnAddOwners = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,19 +65,18 @@ namespace QlyBatDongSan
             this.panel1.Controls.Add(this.label11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1074, 63);
+            this.panel1.Size = new System.Drawing.Size(1432, 78);
             this.panel1.TabIndex = 0;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(298, 16);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(397, 20);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 31);
+            this.label11.Size = new System.Drawing.Size(140, 39);
             this.label11.TabIndex = 1;
             this.label11.Text = "Owners";
             // 
@@ -87,21 +85,20 @@ namespace QlyBatDongSan
             this.panel2.Controls.Add(this.btnRefresh);
             this.panel2.Controls.Add(this.btnRemoveOwners);
             this.panel2.Controls.Add(this.btnEditOwners);
-            this.panel2.Controls.Add(this.btnOwnerProperty);
             this.panel2.Controls.Add(this.btnAddOwners);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 398);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 489);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1074, 124);
+            this.panel2.Size = new System.Drawing.Size(1432, 153);
             this.panel2.TabIndex = 1;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(704, 11);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRefresh.Location = new System.Drawing.Point(939, 52);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(346, 47);
+            this.btnRefresh.Size = new System.Drawing.Size(461, 58);
             this.btnRefresh.TabIndex = 0;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -109,10 +106,10 @@ namespace QlyBatDongSan
             // 
             // btnRemoveOwners
             // 
-            this.btnRemoveOwners.Location = new System.Drawing.Point(370, 11);
-            this.btnRemoveOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveOwners.Location = new System.Drawing.Point(493, 52);
+            this.btnRemoveOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRemoveOwners.Name = "btnRemoveOwners";
-            this.btnRemoveOwners.Size = new System.Drawing.Size(215, 47);
+            this.btnRemoveOwners.Size = new System.Drawing.Size(287, 58);
             this.btnRemoveOwners.TabIndex = 0;
             this.btnRemoveOwners.Text = "Remove";
             this.btnRemoveOwners.UseVisualStyleBackColor = true;
@@ -120,32 +117,21 @@ namespace QlyBatDongSan
             // 
             // btnEditOwners
             // 
-            this.btnEditOwners.Location = new System.Drawing.Point(143, 11);
-            this.btnEditOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditOwners.Location = new System.Drawing.Point(191, 52);
+            this.btnEditOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditOwners.Name = "btnEditOwners";
-            this.btnEditOwners.Size = new System.Drawing.Size(132, 47);
+            this.btnEditOwners.Size = new System.Drawing.Size(176, 58);
             this.btnEditOwners.TabIndex = 0;
             this.btnEditOwners.Text = "Edit";
             this.btnEditOwners.UseVisualStyleBackColor = true;
             this.btnEditOwners.Click += new System.EventHandler(this.btnEditOwners_Click);
             // 
-            // btnOwnerProperty
-            // 
-            this.btnOwnerProperty.Location = new System.Drawing.Point(21, 69);
-            this.btnOwnerProperty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnOwnerProperty.Name = "btnOwnerProperty";
-            this.btnOwnerProperty.Size = new System.Drawing.Size(254, 47);
-            this.btnOwnerProperty.TabIndex = 0;
-            this.btnOwnerProperty.Text = "Owner Property";
-            this.btnOwnerProperty.UseVisualStyleBackColor = true;
-            this.btnOwnerProperty.Click += new System.EventHandler(this.btnOwnerProperty_Click);
-            // 
             // btnAddOwners
             // 
-            this.btnAddOwners.Location = new System.Drawing.Point(21, 11);
-            this.btnAddOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddOwners.Location = new System.Drawing.Point(28, 52);
+            this.btnAddOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddOwners.Name = "btnAddOwners";
-            this.btnAddOwners.Size = new System.Drawing.Size(118, 47);
+            this.btnAddOwners.Size = new System.Drawing.Size(157, 58);
             this.btnAddOwners.TabIndex = 0;
             this.btnAddOwners.Text = "Add";
             this.btnAddOwners.UseVisualStyleBackColor = true;
@@ -154,111 +140,105 @@ namespace QlyBatDongSan
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.Size = new System.Drawing.Size(25, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 119);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "FirstName:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 163);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(12, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "LastName:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 206);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(12, 254);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Phone:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 256);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(12, 315);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 2;
             this.label5.Text = "Email:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 297);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(12, 366);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Address:";
             // 
             // txtIDOwners
             // 
-            this.txtIDOwners.Location = new System.Drawing.Point(80, 72);
-            this.txtIDOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIDOwners.Location = new System.Drawing.Point(107, 89);
+            this.txtIDOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIDOwners.Name = "txtIDOwners";
             this.txtIDOwners.ReadOnly = true;
-            this.txtIDOwners.Size = new System.Drawing.Size(196, 20);
+            this.txtIDOwners.Size = new System.Drawing.Size(260, 22);
             this.txtIDOwners.TabIndex = 3;
             // 
             // txtFirstNameOwners
             // 
-            this.txtFirstNameOwners.Location = new System.Drawing.Point(80, 119);
-            this.txtFirstNameOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstNameOwners.Location = new System.Drawing.Point(107, 146);
+            this.txtFirstNameOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFirstNameOwners.Name = "txtFirstNameOwners";
-            this.txtFirstNameOwners.Size = new System.Drawing.Size(196, 20);
+            this.txtFirstNameOwners.Size = new System.Drawing.Size(260, 22);
             this.txtFirstNameOwners.TabIndex = 3;
             // 
             // txtLastNameOwners
             // 
-            this.txtLastNameOwners.Location = new System.Drawing.Point(80, 161);
-            this.txtLastNameOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastNameOwners.Location = new System.Drawing.Point(107, 198);
+            this.txtLastNameOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastNameOwners.Name = "txtLastNameOwners";
-            this.txtLastNameOwners.Size = new System.Drawing.Size(196, 20);
+            this.txtLastNameOwners.Size = new System.Drawing.Size(260, 22);
             this.txtLastNameOwners.TabIndex = 3;
             // 
             // txtPhoneOwners
             // 
-            this.txtPhoneOwners.Location = new System.Drawing.Point(80, 203);
-            this.txtPhoneOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhoneOwners.Location = new System.Drawing.Point(107, 250);
+            this.txtPhoneOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhoneOwners.Name = "txtPhoneOwners";
-            this.txtPhoneOwners.Size = new System.Drawing.Size(196, 20);
+            this.txtPhoneOwners.Size = new System.Drawing.Size(260, 22);
             this.txtPhoneOwners.TabIndex = 3;
             // 
             // txtEmailOwners
             // 
-            this.txtEmailOwners.Location = new System.Drawing.Point(80, 252);
-            this.txtEmailOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailOwners.Location = new System.Drawing.Point(107, 310);
+            this.txtEmailOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmailOwners.Name = "txtEmailOwners";
-            this.txtEmailOwners.Size = new System.Drawing.Size(196, 20);
+            this.txtEmailOwners.Size = new System.Drawing.Size(260, 22);
             this.txtEmailOwners.TabIndex = 3;
             // 
             // txtAddressOwners
             // 
-            this.txtAddressOwners.Location = new System.Drawing.Point(80, 293);
-            this.txtAddressOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddressOwners.Location = new System.Drawing.Point(107, 361);
+            this.txtAddressOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddressOwners.Multiline = true;
             this.txtAddressOwners.Name = "txtAddressOwners";
-            this.txtAddressOwners.Size = new System.Drawing.Size(196, 91);
+            this.txtAddressOwners.Size = new System.Drawing.Size(260, 111);
             this.txtAddressOwners.TabIndex = 3;
             // 
             // lvOwners
@@ -272,11 +252,11 @@ namespace QlyBatDongSan
             this.address});
             this.lvOwners.FullRowSelect = true;
             this.lvOwners.HideSelection = false;
-            this.lvOwners.Location = new System.Drawing.Point(370, 76);
-            this.lvOwners.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvOwners.Location = new System.Drawing.Point(493, 94);
+            this.lvOwners.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvOwners.MultiSelect = false;
             this.lvOwners.Name = "lvOwners";
-            this.lvOwners.Size = new System.Drawing.Size(680, 308);
+            this.lvOwners.Size = new System.Drawing.Size(905, 378);
             this.lvOwners.TabIndex = 4;
             this.lvOwners.UseCompatibleStateImageBehavior = false;
             this.lvOwners.View = System.Windows.Forms.View.Details;
@@ -313,10 +293,10 @@ namespace QlyBatDongSan
             // 
             // Owners
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orchid;
-            this.ClientSize = new System.Drawing.Size(1074, 522);
+            this.ClientSize = new System.Drawing.Size(1432, 642);
             this.Controls.Add(this.lvOwners);
             this.Controls.Add(this.txtAddressOwners);
             this.Controls.Add(this.txtEmailOwners);
@@ -332,7 +312,7 @@ namespace QlyBatDongSan
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Owners";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Owners";
@@ -366,7 +346,6 @@ namespace QlyBatDongSan
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnRemoveOwners;
         private System.Windows.Forms.Button btnEditOwners;
-        private System.Windows.Forms.Button btnOwnerProperty;
         private System.Windows.Forms.ColumnHeader id;
         private System.Windows.Forms.ColumnHeader firstName;
         private System.Windows.Forms.ColumnHeader lastName;

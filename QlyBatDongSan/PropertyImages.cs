@@ -195,7 +195,20 @@ namespace QlyBatDongSan
 
         private void btnRemovePropertyImages_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (lvMiddlePropertyImages.SelectedItems.Count > 0)
+                {
+                    string sql = "delete property_image where id =" + lvMiddlePropertyImages.SelectedItems[0].Text;
+                    dataBase.MyExecuteNonQuery(sql, CommandType.Text);
+                    MessageBox.Show("removed");
+                    LoadTypeDetail();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Choose the data remove before delete");
+            }
 
         }
     }
